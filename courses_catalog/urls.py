@@ -9,7 +9,6 @@ urlpatterns = [
     # TODO: Fill in URL patterns and views here.
     # re_path(r'', TemplateView.as_view(template_name="courses_catalog/base.html")),
     path(
-        'courses/',get_courses.as_view(),
-        name='get_courses_list'
+        '/api/courses/', get_courses, name='get_courses_list'
     ),
 ]
