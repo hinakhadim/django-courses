@@ -3,7 +3,7 @@ URLs for courses_catalog.
 """
 from django.urls import re_path, path  # pylint: disable=unused-import
 from django.views.generic import TemplateView  # pylint: disable=unused-import
-from courses_catalog.views import get_courses
+from courses_catalog.views import get_courses, CourseListAPIView
 
 urlpatterns = [
     # TODO: Fill in URL patterns and views here.
@@ -11,4 +11,5 @@ urlpatterns = [
     path(
         'list/', get_courses, name='get_courses_list'
     ),
+    path('v1/list/', CourseListAPIView.as_view(), nname='hina_course_list')
 ]
