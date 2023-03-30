@@ -11,5 +11,5 @@ urlpatterns = [
     path(
         'list/', get_courses, name='get_courses_list'
     ),
-    path('v1/list/', CourseListAPIView.as_view(), nname='hina_course_list')
+    path('v1/list/', CourseListAPIView.as_view(), name='hina_course_list')
 ]

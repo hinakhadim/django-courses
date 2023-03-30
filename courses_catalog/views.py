@@ -21,5 +21,5 @@ class CourseListAPIView(ListAPIView):
     ).select_related(
         'image_set'
     )
-    serializer = CourseSerializer
+    serializer_class = CourseSerializer
 
